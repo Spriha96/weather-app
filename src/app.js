@@ -41,6 +41,17 @@ app.get('/about', (req, res) => {
     })
 })
 
+app.get('/weather', (req, res) => {
+    if ( !req.query.address ) {
+        return res.send('Please provide an address')
+    }
+
+    res.send({
+        address: req.query.address,
+        message: "Done"
+    })
+})
+
 app.get('/about/*', (req, res) => {
     res.render('404', {
         title: '404',

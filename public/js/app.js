@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('button').click(function(e){
         e.preventDefault()
-        const location = $('input').value
+        const location = $('input').val()
         const url = '/weather?address=' + location
 
         $('#message-1').text('Loading...')

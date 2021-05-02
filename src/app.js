@@ -39,5 +39,5 @@ app.get('/weather', (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log('App is ruuning')
+    console.log('App is running')
 })

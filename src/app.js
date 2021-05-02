@@ -33,10 +33,10 @@ app.get('', (req, res) => {
     })
 })
 
-app.get('/', (req, res) => {
+app.get('', (req, res) => {
     // res.send('weather')
     res.render('index', {
-        title: 'root',
+        title: 'Weather',
         name: 'Spriha'
     })
 
@@ -44,7 +44,7 @@ app.get('/', (req, res) => {
 
 app.get('/about', (req, res) => {
     res.render('about', {
-        title: 'about',
+        title: 'About',
         name: 'Spriha'
     })
 })

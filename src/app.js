@@ -49,6 +49,22 @@ app.get('/about', (req, res) => {
     })
 })
 
+app.get('/about/*', (req, res) => {
+    res.render('404', {
+        title: '404',
+        name: 'Spriha',
+        errorMessage: 'The requested about help page was not found'
+    })
+})
+
+app.get('*', (req, res) => {
+    res.render('404', {
+        title: '404',
+        name: 'Spriha',
+        errorMessage: 'The requested page was not found'
+    })
+})
+
 app.listen(port, () => {
     console.log('App is running')
 })

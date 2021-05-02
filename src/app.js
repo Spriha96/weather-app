@@ -25,14 +25,6 @@ app.use(express.static(publicDirectoryPath))
 //     res.send('Root')
 // })
 
-//For weather route i.e., localhost:3000/
-app.get('', (req, res) => {
-    res.render('index', {
-        name: 'Sprihs',
-        age: 24
-    })
-})
-
 app.get('', (req, res) => {
     // res.send('weather')
     res.render('index', {
